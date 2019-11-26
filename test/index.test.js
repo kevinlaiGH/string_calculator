@@ -38,5 +38,14 @@ describe('#add()', function () {
         // Then
         assert.equal(result, expected)
     });
+    it('should return 100 when "10,10,10" are passed', function () {
+        // Given
+        const input = "10,10,10"
+        const expected = 30
+        // When
+        const result = add(input)
+        // Then
+        assert.equal(result, expected)
+    });
 
 });
