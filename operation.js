@@ -1,10 +1,12 @@
+// https://stackoverflow.com/questions/8359566/regex-to-match-symbols
+const checker = RegExp(/[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/\s]/)
 
 const add = (input) => {
     if (input === "" || input === null) {
         return 0
-    } else if (input.includes(",")) {
+    } else if (checker.test(input)) {
 
-        const parts = input.split(",")
+        const parts = input.split(checker)
         let temp = []
 
         for ( let i = 0; i < parts.length; i++){

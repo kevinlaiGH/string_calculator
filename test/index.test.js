@@ -31,7 +31,7 @@ describe('#add()', function () {
         // Then
         assert.equal(result, expected)
     });
-    it('should return 7 when "3,4" are passed', function () {
+    it('should return 7 when "3,4" is passed', function () {
         // Given
         const input = "3,4"
         const expected = 7
@@ -40,7 +40,7 @@ describe('#add()', function () {
         // Then
         assert.equal(result, expected)
     });
-    it('should return 30 when "10,10,10" are passed', function () {
+    it('should return 30 when "10,10,10" is passed', function () {
         // Given
         const input = "10,10,10"
         const expected = 30
@@ -49,7 +49,7 @@ describe('#add()', function () {
         // Then
         assert.equal(result, expected)
     });
-    it('should return 30 when "10 10 10" are passed', function () {
+    it('should return 30 when "10 10 10" is passed', function () {
         // Given
         const input = "10 10 10"
         const expected = 30
