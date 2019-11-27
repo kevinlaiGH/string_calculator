@@ -31,7 +31,7 @@ const subtract = (input) => {
         return parseInt(input, 10)
     }
 }
-
+//pass tested 100-10-10
 
 
 module.exports = {
