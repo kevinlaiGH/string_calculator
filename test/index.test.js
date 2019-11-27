@@ -1,6 +1,7 @@
 const assert = require('assert');
 const add = require('../operation.js').add;
 const subtract = require('../operation.js').subtract;
+const divide = require('../operation.js').divide;
 
 describe('#add()', function () {
     it('should return 0 when empty string is passed', function () {
@@ -48,21 +49,12 @@ describe('#add()', function () {
         // Then
         assert.equal(result, expected)
     });
-    it('should return 90 when "100-10" are passed', function () {
+    it('should return 30 when "10 10 10" are passed', function () {
         // Given
-        const input = "100-10"
-        const expected = 90
+        const input = "10 10 10"
+        const expected = 30
         // When
-        const result = subtract(input)
-        // Then
-        assert.equal(result, expected)
-    });
-    it('should return 80 when "100-10-10" are passed', function () {
-        // Given
-        const input = "100-10-10"
-        const expected = 80
-        // When
-        const result = subtract(input)
+        const result = add(input)
         // Then
         assert.equal(result, expected)
     });
