@@ -1,5 +1,6 @@
+
 const add = (input) => {
-    if (input === "") {
+    if (input === "" || input === null) {
         return 0
     } else if (input.includes(",")) {
 
@@ -16,9 +17,11 @@ const add = (input) => {
     }
 }
 
-const unknown = add("10,10,10")
-console.log(unknown)
+
+
+
 
 module.exports = {
     add,
+    subtract
 }
