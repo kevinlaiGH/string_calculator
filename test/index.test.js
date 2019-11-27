@@ -47,5 +47,14 @@ describe('#add()', function () {
         // Then
         assert.equal(result, expected)
     });
+    it('should return 10 when "1%2*3#4" are passed', function () {
+        // Given
+        const input = "1%2*3#4"
+        const expected = 10
+        // When
+        const result = add(input)
+        // Then
+        assert.equal(result, expected)
+    });
 
 });
