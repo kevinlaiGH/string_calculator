@@ -7,7 +7,9 @@ const add = (input) => {
     }
     if (checker.test(input)) {
         const parts = input.split(checker)
+        console.log('parts:',parts)
         const partsWithoutRegex = parts.filter(x => x !== '')
+        console.log('partsWithoutRegex:',partsWithoutRegex)
         let temp = []
 
         for ( let i = 0; i < partsWithoutRegex.length; i++){

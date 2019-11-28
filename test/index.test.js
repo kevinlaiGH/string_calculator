@@ -66,16 +66,15 @@ describe('#add()', function () {
         // Then
         assert.equal(result, expected)
     });
-    it('should return 40 when "10**10&&10^^10" is passed', function () {
+    it('should return 40 when "10*&*10&&&10^^10" is passed', function () {
         // Given
-        const input = "10**10&&10^^10"
+        const input = "10*&*10&&&10^^10"
         const expected = 40
         // When
         const result = add(input)
         // Then
         assert.equal(result, expected)
     });
-
 
 
 });
