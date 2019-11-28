@@ -13,13 +13,9 @@ const add = (input) => {
         for ( let i = 0; i < partsWithoutRegex.length; i++){
             temp.push(parseInt(partsWithoutRegex[i], 10))
         }
-
         return temp.reduce(( a, b ) => a + b , 0)
-
     }
-
     return parseInt(input,10)
-
 }
 
 module.exports = {
